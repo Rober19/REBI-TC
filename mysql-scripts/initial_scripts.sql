@@ -52,7 +52,7 @@ id_db_user int not null,
 descargados int ,
 favoritos int ,
 visto int ,
-nombre VARCHAR(30) not null, 
+nombre VARCHAR(100) not null, 
 link_view VARCHAR(2000) not null,
 link_download VARCHAR(2000) not null,
 titulo VARCHAR(100) not null,
@@ -89,5 +89,7 @@ Product product3 = new Product(3, "Jamon de Cerdo Pietran", "https://images.rapp
 
 insert into usuarios (nombre, password, email, id_ciudadania, id_institucional, role, descripcion, ubicacion, img) 
 values (
-"Fernando Araujo", "12345", "fercho@clandestine.com", "a123", "b123", "admin", "lo que sea mi tio", "La perimetral", "https://www.icesi.edu.co/unicesi/images/unicesi/eventos/2017/PLAGIO800_x600.jpg");
+"Fernando Araujo", "12345", "fercho@clandestine.com", "a123", "b123", "admin", "lo que sea mi tio",
+ "La perimetral", "https://www.icesi.edu.co/unicesi/images/unicesi/eventos/2017/PLAGIO800_x600.jpg"
+ );
 
